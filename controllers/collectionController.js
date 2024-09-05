@@ -20,16 +20,6 @@ const getCollection = async (req, res) => {
     }
 }
 
-const getNewCollection = async (req, res) => {
-    const id = req.params.id
-    try {
-        const collection = await Collection.findById(id).populate("items")
-        res.status(200).json({msg: "ok", collection: collection})
-    } catch (err) {
-        res.status(500).json({msg: "error", err: err})
-    }
-}
-
 const createCollection = async (req, res) => {
     const date = new Date
     const year = date.getFullYear()
@@ -70,7 +60,6 @@ module.exports = {
     getAllCollections,
     createCollection,
     getCollection,
-    getNewCollection,
     updateCollection,
     deleteCollection
 }
