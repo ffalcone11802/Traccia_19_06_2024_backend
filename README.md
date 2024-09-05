@@ -1,3 +1,2 @@
-# Fondamenti del Web - Traccia 19/06/2024
-
-Backend
+# Traccia 19/06/2024 - Backend
+Soluzione di FALCONE FRANCESCO
